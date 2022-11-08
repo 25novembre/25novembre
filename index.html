@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>Anto&Gio- 25 novembre</title>
-  <link rel="stylesheet" href="./style.css">
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
 <article class="starwars">
   <audio preload="auto">
     <source src="https://s.cdpn.io/1202/Star_Wars_original_opening_crawl_1977.ogg" type="audio/ogg" />
@@ -48,8 +38,8 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
   // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+  document.getElementById("demo").innerHTML = days + " giorni " + hours + " ore "
+  + minutes + " minuti e " + seconds + " secondi ";
     
   // If the count down is over, write some text 
   if (distance < 0) {
@@ -69,7 +59,7 @@ Giorgio, dal canto suo, non è troppo interessato alle feste, ma approfitta ogni
       </p>
 
       <p>
- Grazie a mille sbatti, travestiti da appuntamenti galanti, sono riusciti a trovare un locale molto carino e carissimo dove svolgere un simpatico pre-serata prima di andare al tempio del futuro perduto a perdere il futuro.
+ Grazie a mille sbatti, spacciati per appuntamenti galanti, sono riusciti a trovare un locale molto carino dove svolgere un simpatico pre-serata prima di andare al tempio del futuro perduto a perdere il futuro
 
       </p>
 
@@ -124,10 +114,16 @@ Seguendo la linea di moderazione tracciata da Antonella hanno creato questo mode
 </svg>
   
   </section>
-  </div>
+    </div>
+  <div class="ending" style="display: none;text-align: center;">
+<canvas id="cnv"></canvas>
+<style>
+  body {margin:0;}
+  canvas{position:fixed; top:0;left:0;}
+</style>
+    <div class="damntext">
+    <p>tua mamma</p>
+      </div>
+      </div>
+  
 </article>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script><script  src="./script.js"></script>
-
-</body>
-</html>
